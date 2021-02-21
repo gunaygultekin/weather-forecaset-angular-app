@@ -1,0 +1,57 @@
+img {
+  background: white;
+  border-radius: 20px;
+}
+button {
+ &:hover,
+ &:focus {
+   text-decoration: none;
+ }
+}
+.row {
+  display: flex;
+  align-items: baseline;
+
+  &.padding {
+    margin: 10px;
+  }
+
+  .city-info {
+    flex-basis: 100px;
+    text-align: left;
+    color: #0f111d;
+  }
+  
+  .icon {
+    flex-basis: 80px;
+  }
+  .temp {
+    flex-basis: 70px;
+
+    &.header {
+      color: #000;
+      font-size: 20px;
+      font-weight: bold;
+      display: inline;
+    }
+
+    .celcius-text {
+      font-size: 18px;
+      position: relative;
+      font-weight: initial;
+      margin-left: 5px;
+    }
+    .degree-text {
+      font-size: 9px;
+      position: absolute;
+      font-weight: initial;
+    }
+  }
+  .weather-info,.wind-speed {
+    flex-basis: 150px;
+    color: grey;
+  }
+  .time {
+    flex-basis: 110px;
+  }
+}

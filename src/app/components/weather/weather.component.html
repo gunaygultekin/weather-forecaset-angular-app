@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row justify-content-center sticky-top">
+    <div class="card col-12">
+      <div class="card-body">
+        <h5 class="card-title">A list of 5 European cities</h5>
+        <p class="card-text">
+          <span *ngIf="isLoading; else elseBlock">Loading please wait...</span>
+          <ng-template #elseBlock>
+            <accordion [isAnimated]="true" [closeOthers]="oneAtATime">
+              <accordion-group *ngFor="let city of cities" (isOpenChange)="loadCityInfo($event,city.geoLoc, city.type)">
+                <button class="btn btn-link btn-block clearfix" accordion-heading type="button">
+                  <div class="row">
+                    <div class="icon">
+                      <img src="http://openweathermap.org/img/wn/{{city.icon}}@2x.png" width="50px" height="50px"
+                        alt="{{city.iconText}}">
+                    </div>
+                    <div class="city-info">{{city.name}}</div>
+                    <div class="temp header">
+                      <span>{{city.averageTemp}}</span>
+                      <span class="degree-text">o</span>
+                      <span class="celcius-text">C</span>
+                    </div>
+                    <div class="wind-speed">{{city.windStrength}} metre/sec</div>
+                  </div>
+                </button>
+                <span class="badge badge-secondary center" *ngIf="hourlyForecast.length === 0">
+                  <span *ngIf="selectedCityId == city.type && isClosed">Loading please wait...</span>
+                </span>
+                <div *ngIf="hourlyForecast.length !== 0">
+                  <div *ngFor="let forecast of hourlyForecast">
+                    <div class="row padding">
+                      <div class="icon">
+                        <img src="http://openweathermap.org/img/wn/{{forecast.weather.icon}}@2x.png" width="50px"
+                          height="50px" alt="{{forecast.weather.desc}}">
+                      </div>
+                      <div class="temp">
+                        <span>{{formatTemp(forecast.temp)}}</span>
+                        <span class="degree-text">o</span>
+                        <span class="celcius-text">C</span>
+                      </div>
+                      <div class="wind-speed">{{forecast.windSpeed}} metre/sec</div>
+                      <div class="time">{{forecast.time * 1000 | date:'hh:mm z'}}</div>
+                    </div>
+                  </div>
+                </div>
+              </accordion-group>
+            </accordion>
+          </ng-template>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

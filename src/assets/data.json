@@ -1,0 +1,220 @@
+{
+  "istanbul": {
+    "coord": {
+      "lon": 28.9833,
+      "lat": 41.0351
+    },
+    "weather": [
+      {
+        "id": 501,
+        "main": "Rain",
+        "description": "moderate rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 10.93,
+      "feels_like": 7.34,
+      "temp_min": 10,
+      "temp_max": 12,
+      "pressure": 1007,
+      "humidity": 93
+    },
+    "visibility": 4000,
+    "wind": {
+      "speed": 5.14,
+      "deg": 320
+    },
+    "rain": {
+      "1h": 1.15
+    },
+    "clouds": {
+      "all": 75
+    },
+    "dt": 1610472030,
+    "sys": {
+      "type": 1,
+      "id": 6970,
+      "country": "TR",
+      "sunrise": 1610429272,
+      "sunset": 1610463388
+    },
+    "timezone": 10800,
+    "id": 745042,
+    "name": "Istanbul",
+    "cod": 200
+  },
+  "berlin": {
+    "coord": {
+      "lon": 13.4105,
+      "lat": 52.5244
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": -0.13,
+      "feels_like": -7.34,
+      "temp_min": -1,
+      "temp_max": 0.56,
+      "pressure": 1021,
+      "humidity": 74
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.69,
+      "deg": 290
+    },
+    "clouds": {
+      "all": 75
+    },
+    "dt": 1610800805,
+    "sys": {
+      "type": 1,
+      "id": 1262,
+      "country": "DE",
+      "sunrise": 1610780925,
+      "sunset": 1610810586
+    },
+    "timezone": 3600,
+    "id": 2950159,
+    "name": "Berlin",
+    "cod": 200
+  },
+  "amsterdam": {
+    "coord": {
+      "lon": 4.8897,
+      "lat": 52.374
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 2.09,
+      "feels_like": -4.61,
+      "temp_min": 1.67,
+      "temp_max": 2.22,
+      "pressure": 1021,
+      "humidity": 69
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.17,
+      "deg": 190
+    },
+    "clouds": {
+      "all": 0
+    },
+    "dt": 1610801159,
+    "sys": {
+      "type": 1,
+      "id": 1524,
+      "country": "NL",
+      "sunrise": 1610782928,
+      "sunset": 1610812674
+    },
+    "timezone": 3600,
+    "id": 2759794,
+    "name": "Amsterdam",
+    "cod": 200
+  },
+  "london": {
+    "coord": {
+      "lon": -0.1257,
+      "lat": 51.5085
+    },
+    "weather": [
+      {
+        "id": 300,
+        "main": "Drizzle",
+        "description": "light intensity drizzle",
+        "icon": "09d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 6.43,
+      "feels_like": 2.5,
+      "temp_min": 5.56,
+      "temp_max": 7.22,
+      "pressure": 1016,
+      "humidity": 93
+    },
+    "visibility": 3900,
+    "wind": {
+      "speed": 4.12,
+      "deg": 240
+    },
+    "clouds": {
+      "all": 90
+    },
+    "dt": 1610800703,
+    "sys": {
+      "type": 1,
+      "id": 1414,
+      "country": "GB",
+      "sunrise": 1610783903,
+      "sunset": 1610814107
+    },
+    "timezone": 0,
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+  },
+  "prag": {
+    "coord": {
+      "lon": 14.4208,
+      "lat": 50.088
+    },
+    "weather": [
+      {
+        "id": 600,
+        "main": "Snow",
+        "description": "light snow",
+        "icon": "13d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": -3.35,
+      "feels_like": -9.43,
+      "temp_min": -4,
+      "temp_max": -2.22,
+      "pressure": 1021,
+      "humidity": 74
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.63,
+      "deg": 250
+    },
+    "clouds": {
+      "all": 90
+    },
+    "dt": 1610800996,
+    "sys": {
+      "type": 1,
+      "id": 6835,
+      "country": "CZ",
+      "sunrise": 1610780062,
+      "sunset": 1610810964
+    },
+    "timezone": 3600,
+    "id": 3067696,
+    "name": "Prague",
+    "cod": 200
+  }
+}
